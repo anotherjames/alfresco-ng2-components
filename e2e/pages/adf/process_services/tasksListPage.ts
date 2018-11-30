@@ -15,30 +15,27 @@
  * limitations under the License.
  */
 
-var Util = require('../../../util/util');
-var DataTablePage = require('../dataTablePage');
+import Util = require('../../../util/util');
+import DataTablePage = require('../dataTablePage');
 
-var TasksListPage = function () {
+export class TasksListPage {
 
-    var taskList = element(by.css("adf-tasklist"));
-    var noTasksFound = element(by.css("p[class='adf-empty-content__title']"));
+    taskList = element(by.css('adf-tasklist'));
+    noTasksFound = element(by.css('p[class="adf-empty-content__title"]'));
+    dataTable = new DataTablePage(taskList);
 
-    var dataTable = new DataTablePage(taskList);
-
-    this.getDataTable = function() {
+    getDataTable() {
         return dataTable;
-    };
+    }
 
-    this.checkTaskListIsLoaded = function() {
+    checkTaskListIsLoaded() {
         Util.waitUntilElementIsVisible(taskList);
         return this;
-    };
+    }
 
-    this.getNoTasksFoundMessage = function() {
-        Util.waitUntilElementIsVisible(noTasksFound);
-        return noTasksFound.getText();
-    };
+    getNoTasksFoundMessage() {
+        Util.waitUntilElementIsVisible(this.noTasksFound);
+        return this.noTasksFound.getText();
+    }
 
-};
-
-module.exports = TasksListPage;
+}
