@@ -19,11 +19,11 @@ import Util = require('../../util/util');
 
 export class ErrorPage {
 
-    errorPageCode = element(by.css("adf-error-content .adf-error-content-code"));
-    errorPageTitle = element(by.css("adf-error-content .adf-error-content-title"));
-    errorPageDescription = element(by.css("adf-error-content .adf-error-content-description"));
-    backButton = element(by.id("adf-return-button"));
-    secondButton = element(by.id("adf-secondary-button"));
+    errorPageCode = element(by.css('adf-error-content .adf-error-content-code'));
+    errorPageTitle = element(by.css('adf-error-content .adf-error-content-title'));
+    errorPageDescription = element(by.css('adf-error-content .adf-error-content-description'));
+    backButton = element(by.id('adf-return-button'));
+    secondButton = element(by.id('adf-secondary-button'));
 
     clickBackButton() {
         Util.waitUntilElementIsVisible(this.backButton);
