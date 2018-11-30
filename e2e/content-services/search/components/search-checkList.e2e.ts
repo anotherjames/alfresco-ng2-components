@@ -146,7 +146,7 @@ describe('Search Radio Component', () => {
 
             configEditorPage.clickSearchConfiguration();
             configEditorPage.clickClearButton();
-            configEditorPage.enterBigConfigurationText(JSON.stringify(jsonFile));
+            configEditorPage.enterConfiguration(JSON.stringify(jsonFile));
             configEditorPage.clickSaveButton();
 
             searchDialog.clickOnSearchIcon().checkSearchBarIsVisible().enterTextAndPressEnter(nodeNames.folder);
@@ -185,7 +185,7 @@ describe('Search Radio Component', () => {
 
             configEditorPage.clickSearchConfiguration();
             configEditorPage.clickClearButton();
-            configEditorPage.enterBigConfigurationText(JSON.stringify(jsonFile));
+            configEditorPage.enterConfiguration(JSON.stringify(jsonFile));
             configEditorPage.clickSaveButton();
 
             searchDialog.clickOnSearchIcon().checkSearchBarIsVisible().enterTextAndPressEnter(nodeNames.folder);
@@ -203,7 +203,7 @@ describe('Search Radio Component', () => {
 
             configEditorPage.clickSearchConfiguration();
             configEditorPage.clickClearButton();
-            configEditorPage.enterBigConfigurationText(JSON.stringify(jsonFile));
+            configEditorPage.enterConfiguration(JSON.stringify(jsonFile));
             configEditorPage.clickSaveButton();
 
             searchDialog.clickOnSearchIcon().checkSearchBarIsVisible().enterTextAndPressEnter(nodeNames.folder);
@@ -221,7 +221,7 @@ describe('Search Radio Component', () => {
 
             configEditorPage.clickSearchConfiguration();
             configEditorPage.clickClearButton();
-            configEditorPage.enterBigConfigurationText(JSON.stringify(jsonFile));
+            configEditorPage.enterConfiguration(JSON.stringify(jsonFile));
             configEditorPage.clickSaveButton();
 
             searchDialog.clickOnSearchIcon().checkSearchBarIsVisible().enterTextAndPressEnter(nodeNames.folder);
@@ -245,7 +245,7 @@ describe('Search Radio Component', () => {
 
             configEditorPage.clickSearchConfiguration();
             configEditorPage.clickClearButton();
-            configEditorPage.enterBigConfigurationText(JSON.stringify(jsonFile));
+            configEditorPage.enterConfiguration(JSON.stringify(jsonFile));
             configEditorPage.clickSaveButton();
 
             searchDialog.clickOnSearchIcon().checkSearchBarIsVisible().enterTextAndPressEnter(nodeNames.folder);
@@ -271,7 +271,7 @@ describe('Search Radio Component', () => {
 
             configEditorPage.clickSearchConfiguration();
             configEditorPage.clickClearButton();
-            configEditorPage.enterBigConfigurationText(JSON.stringify(jsonFile));
+            configEditorPage.enterConfiguration(JSON.stringify(jsonFile));
             configEditorPage.clickSaveButton();
 
             searchDialog.clickOnSearchIcon().checkSearchBarIsVisible().enterTextAndPressEnter(nodeNames.folder);
@@ -314,7 +314,7 @@ describe('Search Radio Component', () => {
 
             configEditorPage.clickSearchConfiguration();
             configEditorPage.clickClearButton();
-            configEditorPage.enterBigConfigurationText(JSON.stringify(jsonFile));
+            configEditorPage.enterConfiguration(JSON.stringify(jsonFile));
             configEditorPage.clickSaveButton();
 
             searchDialog.clickOnSearchIcon().checkSearchBarIsVisible().enterTextAndPressEnter(nodeNames.folder);
@@ -341,7 +341,7 @@ describe('Search Radio Component', () => {
 
             configEditorPage.clickSearchConfiguration();
             configEditorPage.clickClearButton();
-            configEditorPage.enterBigConfigurationText(JSON.stringify(jsonFile));
+            configEditorPage.enterConfiguration(JSON.stringify(jsonFile));
             configEditorPage.clickSaveButton();
 
             searchDialog.clickOnSearchIcon().checkSearchBarIsVisible().enterTextAndPressEnter(nodeNames.folder);
